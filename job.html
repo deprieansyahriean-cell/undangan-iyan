@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan - Riean & Reva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- HALAMAN 1 - PREVIEW FILM -->
+    <div class="main-page" id="mainPage">
+        <section class="hero-section">
+            <div class="netflix-logo">R&R's WEDDING</div>
+            <div class="hero-content">
+                <h1 class="hero-title">Riean & Reva</h1>
+                <p class="hero-subtitle">A Love Story Worth Watching</p>
+                <p class="hero-date">15 September 2025</p>
+                <p class="hero-description">
+                    Saksikan perjalanan cinta dua hati yang bersatu dalam sebuah komitmen selamanya.
+                    Dari pertemuan pertama yang tak pernah menyangka menjadi sepasang kekasih.
+                </p>
+                <div class="hero-buttons">
+                    <button class="play-btn" onclick="showContentPage()">
+                        ▶ Lihat Undangan
+                    </button>
+                    <button class="info-btn" onclick="showContentPage()">
+                        <i class="fa-solid fa-circle-info"></i> Info Lengkap
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- HALAMAN 2 - KONTEN UTAMA -->
+    <div class="content-page" id="contentPage">
+        <nav class="navbar">
+            <div class="netflix-logo">R&R's WEDDING</div>
+        </nav>
+
+        <!-- Meet the Couple Section -->
+        <section class="section couple-section">
+            <h2 class="section-title">Meet the Couple</h2>
+            <div class="characters-grid">
+                <div class="character-card">
+                    <div class="character-image bride">
+                        <div class="character-overlay">
+                            <h3 class="character-name">Reva</h3>
+                            <p class="character-role">Sintia Naha Reva</p>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <p class="character-bio">
+                            seorang wanita yang pekerja keras dan mandiri tentunya.
+                            sintia naha reva adalah wanita yang paling menawan bagi riean depriansyah.
+                        </p>
+                        <div class="character-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ayah</span>
+                                <span class="detail-value">Dedi</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Ibu</span>
+                                <span class="detail-value">Ani Asih</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Profesi</span>
+                                <span class="detail-value">konten kreator</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Quote</span>
+                                <span class="detail-value">"Create Beautiful Moments"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="character-card">
+                    <div class="character-image">
+                        <div class="character-overlay">
+                            <h3 class="character-name">Riean</h3>
+                            <p class="character-role">Riean Deprieansyah S.Kom</p>
+                        </div>
+                    </div>
+                    <div class="character-info">
+                        <p class="character-bio">
+                            Seorang software engineer yang cerdas dan humoris. Riean selalu bisa membuat
+                            orang tersenyum dengan kecerdasan dan kebaikan hatinya. Passion-nya adalah
+                            teknologi, musik, dan tentunya Reva.
+                        </p>
+                        <div class="character-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ayah</span>
+                                <span class="detail-value">Dedi Setiadi M.T</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Ibu</span>
+                                <span class="detail-value">Irma Nur Fatimah</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Profesi</span>
+                                <span class="detail-value">Software Engineer</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Quote</span>
+                                <span class="detail-value">"Code with Love"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pre-wedding Gallery Section -->
+        <section class="section prewedding-section">
+            <h2 class="section-title">Pre-Wedding Gallery</h2>
+            <div class="gallery-container">
+                <!-- Video Section -->
+                <div class="video-section">
+                    <div class="main-video-container">
+                        <video class="main-video" autoplay muted loop playsinline>
+                            <source
+                                src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                                type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-info">
+                            <h3 class="video-title">Our Journey Together</h3>
+                            <p class="video-description">Saksikan perjalanan cinta kami dari awal hingga menuju altar
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Photos Row -->
+                <div class="gallery-row">
+                    <div class="gallery-item" onclick="openModal('img1')">
+                        <img src="img/prewed1.jpg"
+                            alt="Pre-wedding 1">
+                    </div>
+                    <div class="gallery-item" onclick="openModal('img2')">
+                        <img src="img/prewed2.jpg"
+                            alt="Pre-wedding 2">
+                    </div>
+                    <div class="gallery-item" onclick="openModal('img3')">
+                        <img src="img/prewed3.jpg" alt="Pre-wedding 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Love Story Section -->
+        <section class="section story-section">
+            <h2 class="section-title">Our Love Story - Episodes</h2>
+            <div class="episodes-grid">
+                <div class="episode-card">
+                    <img src="img/eps1.jpg"
+                        alt="Episode 1" class="episode-image">
+                    <div class="episode-content">
+                        <div class="episode-number">EPISODE 1</div>
+                        <h3 class="episode-title">The Coffee Shop Incident</h3>
+                        <p class="episode-synopsis">
+                            Kami bertemu pertama kali di sebuah coffee shop di Jakarta pada tahun 2020.
+                            Willy sedang mengerjakan project programming-nya, sementara Jessica sedang
+                            mendesain poster untuk kliennya. Secara tidak sengaja, Jessica menumpahkan
+                            kopi ke laptop Willy. Dari insiden yang memalukan itu, percakapan pertama kami dimulai.
+                        </p>
+                        <div class="episode-duration">2020 - First Meeting</div>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <img src="img/eps2.jpg"
+                        alt="Episode 2" class="episode-image">
+                    <div class="episode-content">
+                        <div class="episode-number">EPISODE 2</div>
+                        <h3 class="episode-title">The Collaboration</h3>
+                        <p class="episode-synopsis">
+                            Dari insiden kopi tersebut, kami mulai berbincang dan menemukan bahwa
+                            kami memiliki banyak kesamaan. Willy membantu Jessica dengan website portofolionya,
+                            sementara Jessica membantu Willy mendesain logo untuk startup-nya.
+                            Kolaborasi profesional yang berkembang menjadi chemistry yang luar biasa.
+                        </p>
+                        <div class="episode-duration">2020-2021 - Professional Partnership</div>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <img src="img/eps3.jpg"
+                        alt="Episode 3" class="episode-image">
+                    <div class="episode-content">
+                        <div class="episode-number">EPISODE 3</div>
+                        <h3 class="episode-title">The First Date</h3>
+                        <p class="episode-synopsis">
+                            Setelah berbulan-bulan bekerja sama, Willy akhirnya memberanikan diri
+                            untuk mengajak Jessica makan malam. Malam itu, di restoran kecil di bilangan
+                            Kemang, kami berbicara tentang mimpi, harapan, dan masa depan.
+                            Kami tahu bahwa ini adalah awal dari sesuatu yang istimewa.
+                        </p>
+                        <div class="episode-duration">2021 - First Official Date</div>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <img src="img/eps4.jpg"
+                        alt="Episode 4" class="episode-image">
+                    <div class="episode-content">
+                        <div class="episode-number">EPISODE 4</div>
+                        <h3 class="episode-title">The Proposal</h3>
+                        <p class="episode-synopsis">
+                            Setelah 4 tahun penuh cinta, tawa, dan dukungan satu sama lain,
+                            Willy melamar Jessica di tempat pertama kali mereka bertemu - coffee shop yang sama.
+                            Dengan cincin yang dia desain sendiri dan bantuan Jessica tanpa sepengetahuannya,
+                            momen itu menjadi sempurna. Dan jawaban Jessica? "YES!"
+                        </p>
+                        <div class="episode-duration">2024 - The Proposal</div>
+                    </div>
+                </div>
+
+                <div class="episode-card">
+                    <img src="img/eps5.jpg"
+                        alt="Episode 5" class="episode-image">
+                    <div class="episode-content">
+                        <div class="episode-number">EPISODE 5</div>
+                        <h3 class="episode-title">The Wedding Day</h3>
+                        <p class="episode-synopsis">
+                            Dan akhirnya, hari yang kami tunggu-tunggu tiba. Dikelilingi oleh keluarga
+                            dan teman-teman tersayang, kami siap untuk memulai babak baru dalam hidup kami.
+                            Dari dua orang yang bertemu karena ketidak sengajaan, kini menjadi satu keluarga.
+                            Terima kasih telah menjadi bagian dari perjalanan cinta kami!
+                        </p>
+                        <div class="episode-duration">15 September 2025 - Forever</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section class="section">
+            <div class="countdown-section">
+                <h2 class="section-title">Countdown to Our Big Day</h2>
+                <div class="countdown-grid">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">00</span>
+                        <span class="countdown-label">Hari</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">00</span>
+                        <span class="countdown-label">Jam</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <span class="countdown-label">Menit</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <span class="countdown-label">Detik</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="section">
+            <div class="location-section">
+                <h2 class="section-title">Wedding Venue</h2>
+                <div class="location-grid">
+                    <div class="location-card">
+                        <h3 class="location-title">Akad Nikah</h3>
+                        <div class="location-details">
+                            <p><strong>Tanggal:</strong> 15 September 2025</p>
+                            <p><strong>Waktu:</strong> 08:00 - 10:00 WIB</p>
+                            <p><strong>Tempat:</strong> Merindu Canteen & Coffee</p>
+                            <p><strong>Alamat:</strong> Jl. Cimanuk No.11, Citarum, Kec. Bandung Wetan, Kota Bandung,
+                                Jawa Barat 40115</p>
+                        </div>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.55577216115316!2d107.62070895232642!3d-6.903474703665841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7b1ebc867d1%3A0x3d4a0bf7afb6b58c!2sMerindu%20Canteen%20%26%20Coffee!5e0!3m2!1sid!2sid!4v1753861181871!5m2!1sid!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <button class="btn"
+                            onclick="window.open('https://maps.app.goo.gl/PwUEu1rhHt27qFUXA', '_blank')">
+                            Buka Maps
+                        </button>
+
+                    </div>
+                    <div class="location-card">
+                        <h3 class="location-title">Resepsi</h3>
+                        <div class="location-details">
+                            <p><strong>Tanggal:</strong> 15 September 2025</p>
+                            <p><strong>Waktu:</strong> 18:00 - 22:00 WIB</p>
+                            <p><strong>Tempat:</strong> Holiday INN</p>
+                            <p><strong>Alamat:</strong> Jl. Dr. Djunjunan No.96, Pasteur, Kec. Sukajadi, Kota Bandung,
+                                Jawa Barat 40162</p>
+                        </div>
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9541340466835!2d107.58806527524416!3d-6.896089693103101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e665b08b263d%3A0x2edd60e3b317f7b4!2sHoliday%20Inn%20Bandung%20Pasteur!5e0!3m2!1sid!2sid!4v1753861466726!5m2!1sid!2sid"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <button class="btn"
+                            onclick="window.open('https://maps.app.goo.gl/mn9tnwPi4LQcaRJN7', '_blank')">
+                            Buka Maps
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Audio Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Control Button -->
+    <div class="music-control" id="musicControl">
+        <button class="music-btn" onclick="toggleMusic()">
+            <span id="musicIcon"><i class="fa-solid fa-volume-high"></i></span>
+        </button>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="mediaModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content" id="modalContent">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
